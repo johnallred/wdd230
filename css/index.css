@@ -1,0 +1,89 @@
+/*css reset*/
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    line-height: calc(1em + 0.5rem);
+    overflow-wrap: break-word; 
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    /*line-height: 1.5;*/
+    font-size: 62.5%;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+/*page styles*/
+body {
+    margin: auto;
+    max-width: 960px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header, footer {
+   border-radius: 0.5rem;
+    background-color: #0076b6;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 1rem;
+    padding: 1rem;
+    box-shadow: 0 0 23px #333;
+}
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+header h1 {
+    width: 100%;
+    text-align: center;
+    color: #FFF;
+   
+}
+
+main {
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 1.1rem;
+}
+
+main h2 {
+    text-shadow: 0 0 5px #333;
+}
+
+main aside {
+    font-weight: 100;
+    font-style: italic;
+}
+
+footer {
+   text-align: center;
+}
+
+footer p:first-child {
+    color: #FFF;
+}
+
+footer p:last-child {
+    color: #FFFF00;
+}
+
