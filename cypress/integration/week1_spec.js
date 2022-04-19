@@ -40,13 +40,15 @@ describe(`Week 1`, () => {
             })
 
             it('ID only used once', () => {
+                let duplicate_array = [];
                 cy.get('[id]')
                 .each(($match) => {
                     cy.wrap($match)
                     .invoke('attr', 'id')
                     .then((id) => {
-                        cy.get(`#${id}`)
-                        .should('have.length', 1);
+                        duplicate_array.push(id);
+                        const unique = new Set(duplicate_array);
+                        expect(duplicate_array.length).to.eq(unique.size);
                     })
                 });
             })
