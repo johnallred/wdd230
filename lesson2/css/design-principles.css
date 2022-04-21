@@ -47,9 +47,7 @@ main {
 
 article{
     display: flex;
-	justify-content: top;
-	align-items: left;
-    flex-direction: column;
+	flex-direction: column;
 
     border: 2px solid #26607F;
     border-radius: 0.5rem 0.5em 0rem 0rem;
